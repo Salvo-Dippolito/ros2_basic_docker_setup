@@ -49,8 +49,11 @@ Questo script:
 ## 🔁 Uscire e rientrare nel container
 
 Per uscire dal container una volta entrati:
-- premere `Ctrl-D` oppure
-- eseguire `exit` dal terminale della Docker
+- premere `Ctrl-D` oppure eseguire `exit` dal terminale della Docker
+```bash
+docker stop ros2_humble
+
+```
 
 Per rientrare nel container:
 
@@ -65,7 +68,7 @@ docker exec -ti ros2_humble bash
 
 ```
 
-oppure usare tmux.
+oppure usare tmux nello stesso terminale.
 
 ## 📦 Pacchetti e strumenti preinstallati
 
