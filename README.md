@@ -83,3 +83,5 @@ La lista completa dei pacchetti preinstallati si trova nello script:
 ```
 
 Se volete aggiungere o togliere pacchetti al vostro Docker potete modificare questo script e ripetere tutte le istruzioni per ricrearvi una nuova immagine Docker.
+
+Si consiglia di dare un'occhiata nel .bashrc per vedere i vari alias disponibili, gbash per esempio apre direttamente con gedit il .bashrc
