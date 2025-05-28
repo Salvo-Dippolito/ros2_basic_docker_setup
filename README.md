@@ -2,7 +2,7 @@
 
 ## 📁 Copia della cartella
 
-Copiare per intero la cartella `ros2_humble` dove vi torna più comodo accedervi.
+Clonare la repo dove vi torna più comodo accedervi.
 
 ## 🔧 Setup iniziale
 
@@ -17,7 +17,7 @@ con il path relativo per la directory del vostro sistema che volete mappare ai w
 Ad esempio, per avere:
 
 ```
-ros2_humble
+ros2_basic_docker_setup
 ├── docker_setup
 └── workspaces
 ```
@@ -37,9 +37,9 @@ si esegue da dentro `docker_setup`:
 ## 🚀 Avvio del container
 
 Per avviare il container appena creato si esegue lo script che termina in  `_run.sh` che trovate nella sotto-cartella `ws` presente nella vostra directory per i `workspaces`:
-
+per esempio, se non si cambia il nome del container, si lancia questo comando da docker_setup:
 ```bash
-./ws/<NOME_CONTAINER>_run.sh
+./ws/ros2_humble_run.sh
 ```
 
 Questo script:
@@ -56,7 +56,16 @@ Per rientrare nel container:
 
 ```bash
 docker start ros2_humble
+docker attach ros2_humble
 ```
+Per aprire nuovi terminali della docker:
+
+```bash
+docker exec -ti ros2_humble bash
+
+```
+
+oppure usare tmux.
 
 ## 📦 Pacchetti e strumenti preinstallati
 
@@ -66,7 +75,6 @@ Nella Docker troverete pre-installati:
 - `ranger`
 - `tmux`
 - `gedit`
-- `nautilus`
 
 La lista completa dei pacchetti preinstallati si trova nello script:
 
