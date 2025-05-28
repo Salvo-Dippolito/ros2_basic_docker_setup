@@ -28,7 +28,7 @@ si esegue da dentro `docker_setup`:
 ./setup.sh ../workspaces
 ```
 
-> Il nome `workspaces` è chiaramente arbitrario.
+> Il nome `workspaces` è arbitrario.
 
 ## 🐳 Creazione dell'immagine Docker
 
